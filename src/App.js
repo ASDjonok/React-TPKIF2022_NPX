@@ -1,7 +1,26 @@
 import logo from './logo.svg';
 import './App.css';
+// import React from "react";
+
+function Welcome(props) {
+  return <h1>Привіт, {props.name}</h1>;
+}
 
 function App() {
+  return (
+      <div>
+        <Welcome name="Світ"/>
+        <Welcome name="Світ2"/>
+      </div>
+  );
+}
+
+/*class App extends React.Component {
+  render() {
+    return <h1>2Привіт, {this.props.name}</h1>;
+  }
+}*/
+/*function App() {
   return (
     <div className="App">
       <header className="App-header">
@@ -20,6 +39,6 @@ function App() {
       </header>
     </div>
   );
-}
+}*/
 
 export default App;
